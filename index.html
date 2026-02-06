@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" class="font-sans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elias</title> <!--replace title here-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @media only screen and (max-width: 795px ){
+        #asciitext {
+          display: none;
+        }
+      }
+      
+      @keyframes intro {
+        from {
+          transform: translateY(50px);
+          opacity: 0.5;
+        }
+        to {
+          transform: translateY(0px);
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="bg-[rgb(20,20,20)] m-0 p-0 min-h-screen" onclick="document.getElementById('backgroundmusic').play()">
+    <div class="flex justify-center items-center p-5">
+      <div class="min-h-[345px] w-[270px] rounded-[10px] border border-transparent bg-[rgba(3,3,3,0.692)] transition-all duration-500 hover:border-[#0099ff] hover:shadow-[0_0_10px_#9ecaed] [animation-name:intro] [animation-duration:1s]">
+        <div class="h-[120px] rounded-t-[10px] bg-[url('https://cdn.yanderecore.cat/background.gif')] bg-cover bg-center flex flex-col items-center">  <!--background here-->
+          <img src="https://cdn.yanderecore.cat/miau.jpg" alt="pf" class="mt-1 h-[100px] w-[100px] rounded-full border border-[#1968cf]"/>
+          <h1 class="text-[25px] text-[#d10c0c] mt-4 mb-4 text-center drop-shadow-[0_0_10px_rgb(255,0,0)]">Elias</h1> <!--change alias-->
+        </div>
+        <div class="px-3">
+          <h4 class="text-center mt-9 mb-0 text-[#0093ce] drop-shadow-[0_0_10px_rgb(3,115,167)]">Languages</h4> 
+          <div class="flex flex-wrap justify-center gap-1 mt-1">
+            <span class="text-[10px] px-2 py-1 rounded-full bg-[#242424] text-[#d4dce2]">Lua</span> <!--put your languages here-->
+            <span class="text-[10px] px-2 py-1 rounded-full bg-[#242424] text-[#d4dce2]">JavaScript</span> <!--put your languages here-->
+            <span class="text-[10px] px-2 py-1 rounded-full bg-[#242424] text-[#d4dce2]">Python</span> <!--put your languages here-->
+            <span class="text-[10px] px-2 py-1 rounded-full bg-[#242424] text-[#d4dce2]">HTML</span> <!--put your languages here-->
+            <span class="text-[10px] px-2 py-1 rounded-full bg-[#242424] text-[#d4dce2]">CSS</span> <!--put your languages here-->
+          </div>
+          <h4 class="text-center mt-4 text-[#0093ce] drop-shadow-[0_0_10px_rgb(3,115,167)]">Contact</h4>
+          <div class="flex flex-wrap justify-center gap-2 mt-2 pb-2">
+            <button class="flex items-center gap-1 h-[25px] w-[95px] rounded-full bg-[#242424] text-[#d4dce2] transition-opacity duration-700 hover:opacity-60 active:opacity-20" data-copy="asthetisch"><img src="https://cdn.yanderecore.cat/discord.png" alt="logo" class="h-[15px] ml-[7px]"/>Discord</button> <!--replace soicals here-->
+            <button class="flex items-center justify-center h-[25px] w-[95px] rounded-full bg-[#242424] text-[#d4dce2] transition-opacity duration-700 hover:opacity-60 active:opacity-20"><a href="https://github.com/EliasIsNoNerd" target="_blank">Github</a></button> <!--replace soicals here-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="snow" class="fixed top-0 left-0 w-full h-full pointer-events-none z-9999"></div>
+    <script src="https://cdn.yanderecore.cat/cap.js"></script>
+    <script src="https://cdn.yanderecore.cat/snow.js"></script>
+    <audio id="backgroundmusic" autoplay loop="">
+        <source src="https://cdn.yanderecore.cat/herewithme.mp3"> <!--Song here-->
+    </audio>
+  </body>
+</html>
+
+
+
+
+
